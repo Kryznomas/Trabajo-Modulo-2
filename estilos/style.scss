@@ -10,8 +10,10 @@ body {
     header {
 
         height: 30%;
-        background-color: $siena;
+        padding: 1vw 0vw 2vw 0vw;
+        background-color: $verde;
         text-align: center;
+        
 
         p {
             margin: 0;
@@ -20,8 +22,8 @@ body {
 
     nav {
 
-        background-color: $verdeclaro;
-        height:10%;
+        background-color: whitesmoke;
+        height:15%;
         
         display:flex;
         flex-direction:row;
@@ -29,7 +31,7 @@ body {
         align-items: center;
 
         a {
-            padding: 2vh 1vw 2vh 1vw;
+            padding: 3vh 2vw 3vh 2vw;
             text-decoration: none;
             color:black;
 
@@ -57,16 +59,16 @@ body {
     }
 
     main {
-
+        
         width:100%;
         display:flex;
         flex-direction:row;
 
         aside {
 
-            background-color: $beige;
+            background-color: $verdeclaro;
             width: 25%;
-            padding: 0vw 1vw 0 1vw;
+            padding: 0vw 1vw 1vw 1vw;
             display:flex;
             flex-direction: column;
             align-items: center;
@@ -92,6 +94,8 @@ body {
                 display:flex;
                 flex-direction: column;
                 align-items: center;
+                padding-bottom: 2vw;
+                border-bottom:solid 1px grey;
             }
         }
     }
@@ -101,31 +105,123 @@ body {
             background-color: white;
             width: 80%;
             padding: 0 0 0 1vw;
+
+            img {
+
+                width:95%;
+            }
+
+            p {
+                width: 95%;
+                text-align: justify;
+            }
         }
+
     
 
     footer {
 
-        background-color: $siena;
+        background-color: $verde;
         display:flex;
         flex-direction:column;
+        align-items: center;
+
+        .contacto {
+        width:100%;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        
+            i {
+
+            font-size: 1.5vw;
+            color: rgb(51, 30, 16);
+            
+        }
+    }
+
+
+
+
+
+        
 
         .links {
 
-        display:flex;
-        flex-direction:row;
-        }
+            display:flex;
+            flex-direction:column;
+            }
 
-        .contacto {
-
-        display:flex;
-        flex-direction:column;
-        }
+        
 
         .rrss {
 
         display:flex;
         flex-direction:column;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        
+        main {
+            flex-direction: column;
+        
+            aside{
+
+                flex-direction: row;
+                width: 100%;
+                padding: 0;
+                justify-content: space-around;
+                
+                .productoaside{
+
+                    border-bottom: none;
+                }
+
+                p, h2{
+                    display:none;
+                }
+
+                button{
+
+                    margin-top: 2vw; 
+                }
+            
+            }
+
+            section{
+
+                width: 100%;
+                align-items: center;
+
+            }
+                
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+
+        nav {
+            flex-wrap: wrap;
+        }
+
+        aside {
+            flex-wrap:wrap;
+
+            .productoaside{
+                max-width: 40%;
+            }
+        }
+
+        footer {
+            
+           /*  i {
+                font-size: 3vw;
+            } */
         }
     }
 }
