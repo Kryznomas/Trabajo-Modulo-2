@@ -14,7 +14,11 @@ body {
         background-color: $verde;
         text-align: center;
         
-
+        h1 {
+            font-family: $Poiret;
+            font-size: 40pt;
+            
+        }
         p {
             margin: 0;
         }
@@ -22,7 +26,7 @@ body {
 
     nav {
 
-        background-color: whitesmoke;
+        background-color: $verdeclaro;
         height:15%;
         
         display:flex;
@@ -52,10 +56,6 @@ body {
 
         }
 
-        .enlacesderecha {
-
-
-        }
     }
 
     main {
@@ -66,7 +66,7 @@ body {
 
         aside {
 
-            background-color: $verdeclaro;
+            background-color: $siena;
             width: 25%;
             padding: 0vw 1vw 1vw 1vw;
             display:flex;
@@ -102,7 +102,7 @@ body {
 
 
         section {
-            background-color: white;
+            background-color: $beige;
             width: 80%;
             padding: 0 0 0 1vw;
 
@@ -142,7 +142,7 @@ body {
         a {
             color: black;
             text-decoration: none;
-            font-size:xx-large;
+            font-size:large;
             
         }
     }
